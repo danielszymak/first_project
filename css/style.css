@@ -1,3 +1,4 @@
+/* Main style - big desktops */
 body {
     position: absolute;
     background-color: /*white*//*rgba(172, 255, 47, 0.2)*/ rgb(255, 242, 205);
@@ -7,6 +8,7 @@ body {
     font-size: 20px;
     font-family: "Open Sans", sans-serif;
 }
+/* Header */
 header {
     position: absolute;
     box-sizing: border-box;
@@ -42,6 +44,7 @@ header #title2 {
     50% {opacity: 1;}
     100% {opacity: 0;}
 }
+/* Navigation */
 nav {
     position: fixed;
     display: grid;
@@ -78,6 +81,7 @@ a:hover {
     text-shadow: 2px 2px 5px rgb(235, 231, 234);
     font-weight: bold;
 }
+/* Social icon */
 social {
     display: flex;
     width: 4%;
@@ -119,6 +123,7 @@ social #youtube {
     background-color: red;
     border-radius: 5px;
 }
+/* Headings */
 h1 {
     position: relative;
     width: 90%;
@@ -133,6 +138,7 @@ h1 p {
     left: 10%;
     width: 90%;
 }
+/* Articles position */
 article {
     position: relative;
     width: 75%;
@@ -140,6 +146,7 @@ article {
     top: 811px;
     padding: 2% 0px;
 }
+/* About me */
 #about1 {
     display: grid;
     max-width: 80vw;
@@ -157,17 +164,20 @@ article {
     max-height: auto;
     max-width: 300px;
 }
+/* Experience */
 #experience1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     line-height: 2em;
 }
+/* Abilities */
 #abilities1 {
     display: grid;
     grid-template-columns: 1fr;
     line-height: 2em;
     font-weight: bold;
 }
+/* Recipes */
 #recipes1 p {
     position: relative;
     text-align: center;
@@ -210,6 +220,7 @@ article {
 #recip_photos .description:hover {
     opacity: 0.7
 }
+/* Contact */
 #contact1 {
     display: grid;
     grid-gap: 30px;
@@ -233,10 +244,8 @@ footer {
     background-color: rgb(255, 176, 28);
     text-align: center;
 }
-footer p {
-    position: relative;
-    left: 15%;
-    width: 65%;
+form {
+    display: grid;
 }
 form input, form textarea {
     width: 90%;
@@ -245,9 +254,6 @@ form input, form textarea {
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8em;
-}
-form {
-    display: grid;
 }
 form .button {
     width: 50%;
@@ -259,6 +265,12 @@ form .button:hover {
 form .button:active {
     background-color: whitesmoke;
 }
+footer p {
+    position: relative;
+    left: 15%;
+    width: 65%;
+}
+/* Small desktops */
 @media only screen and (min-width: 1081px) and (max-width: 1280px) {
     body {
         font-size: 17px;
@@ -267,6 +279,7 @@ form .button:active {
         height: 805px;
     }
 }
+/* Very small desktops */
 @media only screen and (min-width: 961px) and (max-width: 1080px) {
     body {
         font-size: 15px;
@@ -275,7 +288,8 @@ form .button:active {
         height: 803px;
     }
 }
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+/* Tablets */
+@media only screen and (min-width: 481px) and (max-width: 960px) {
     body {
         font-size: 14px;
     }
@@ -368,7 +382,8 @@ form .button:active {
         padding-bottom: 50px;
     }
 }
-@media only screen and (max-width: 400px) {
+/* Phones */
+@media only screen and (max-width: 480px) {
     body {
         font-size: 14px;
     }
